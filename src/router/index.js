@@ -5,6 +5,14 @@ import HomeView from '../views/HomeView.vue'
 Vue.use(VueRouter)
 
 const routes = [
+
+  {
+    path: "/",
+    alias: "/tutorials",
+    name: "tutorials",
+    component: () => import("../components/TutorialsList")
+  },
+  
   {
     path: '/',
     name: 'home',
